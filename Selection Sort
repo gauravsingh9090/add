@@ -1,0 +1,16 @@
+// Selection Short
+
+#include<iostream>
+using namespace std;
+
+void selection_sort(int a[], int size){
+	 int temp ,index;
+	for(int i=0;i<size-1;i++){
+		index = i;
+		for(int j=i+1;j<size;j++){
+			if(a[j]<a[index])
+			  index =j;
+		}
+		temp  = a[i];
+		a[i]  = a[index];
+	
